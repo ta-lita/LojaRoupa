@@ -1,0 +1,289 @@
+/* =========== GERAL ============= */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Primary-color: #69306D;
+    
+    --Brand-Dark: #0E103D;
+    --Brand-Light: #A5668B;
+
+    --Details-light: #F2D7EE;
+    --Details-dark: #D3BCC0;
+
+    --height-nav: 4.5rem;
+}
+
+body{
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ul li{
+    list-style: none;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+
+    padding: 1rem;
+    color: var(--Primary-color);
+    background-color: var(--Details-dark)
+}
+
+.wrapper{
+    padding: 2rem;
+}
+
+/* =========== HEADER ============= */
+
+
+header#cabecalho{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--Brand-Dark);
+    font-size: 1rem;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+    height: var(--height-nav);
+}
+
+header#cabecalho a{
+    color: var(--Brand-Light);
+    font-weight: 700;
+}
+a.logo{
+    text-transform: uppercase;
+}
+
+
+ul.lista-nav{
+    display: flex;
+    gap: .8rem;
+}
+.lista-nav a{
+    padding: .5rem;
+    transition: background-color .7s;
+
+    border-radius: 5rem;
+
+}
+.lista-nav a:hover{
+    background-color: var(--Details-light);
+    transition: background-color .7s;
+
+    border-radius: 5rem;
+}
+
+/* =========== CORPO ============= */
+#corpo {
+    background-color: var(--Primary-color);
+}
+
+/* =========== INICIO ============= */
+#inicio{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    padding-top: var(--height-nav);
+
+    
+}
+#corpo #inicio h1{
+    font-size: 4rem;
+    text-align: center;
+    
+    padding: 5rem 3rem;
+    
+    color: var(--Brand-Light);
+}
+
+
+/* =========== SOBRE ============= */
+#sobre{
+    padding-top: var(--height-nav);  
+    margin-bottom: 10rem;  
+}
+
+#sobre p{
+    font-size: 1.5rem;
+    text-align: center;
+    
+    color: var(--Brand-Dark);
+    margin-block: 3rem;
+}
+
+#marcas-loja{
+    background-color: var(--Details-dark);
+    width: 80%;
+    height: 20%;
+
+
+    margin-inline: auto;
+    border-radius: 5rem; 
+    padding: 3rem 2rem 3rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#marcas-loja .stats{
+    width: 20rem;
+    
+}
+#marcas-loja .stats h3{
+    font-size: 4rem;
+    text-align: center;
+}
+#marcas-loja .stats p{
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 0;
+}
+
+/* =========== MOSTRUARIO ============= */
+#mostruario{
+    padding-top: var(--height-nav)
+}
+#images{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.3rem;
+    padding-inline: 10rem;
+}
+
+#images img{
+    width: 10rem;
+}
+
+#images p{
+    font-size: 1rem;
+    color: var(--Brand-Dark);
+}
+
+.container1{
+   display: flex;
+   align-items: center;
+   padding: 0 20rem 1rem 2rem
+}
+.container1 p{
+    text-align: left;
+    padding-left: .5rem;
+}
+
+.container1 img{
+    border-right: 1px solid black;
+}
+.container2{
+    display:flex;
+    align-items: center;
+    padding: 0 2rem 1rem 20rem
+
+}
+.container2 p{
+    text-align: right;
+    padding-right: .5rem;
+}
+.container2 img{
+    border-left: 1px solid black;
+}
+
+/* =========== LOCALIZAÇAO ============= */
+#localizacao{
+    padding-top: var(--height-nav);
+}
+.container4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 2rem;
+}
+legend{
+    font-size: 2rem;
+    
+    color: var(--Details-dark)
+
+}
+
+fieldset{
+    border: none;
+}
+
+/* =========== CONTATO ============= */
+#contato {
+    padding-top: var(--height-nav);
+}
+
+#contato p{
+    font-size: 2rem;
+    color: var(--Brand-Dark);
+    text-align: center;
+}
+#contato button{
+    border-style: none;
+    background-color: var(--Brand-Dark);
+    border-radius: 5rem;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+
+    font-size: 1.5rem;
+    color: white;
+
+    transition: background-color .3s
+
+}
+
+#contato button:hover{
+    background-color: var(--Brand-Light);
+    cursor: pointer;
+    transition: background-color .3s
+}
+
+.container3{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+/* =========== FOOTER ============= */
+footer{
+    background-color: var(--Brand-Dark);
+    
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    font-size: 1rem;
+    color: var(--Brand-Light);
+    text-align: center;
+}
+footer img{ 
+    width: 2rem;
+}
+
+
+
+
+
+
